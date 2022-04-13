@@ -9,7 +9,7 @@ class Sprite {
         this.framesMax = framesMax
         this.framesCurrent = 0
         this.framesElasped = 0  //how many frames elasped over entire animation
-        this.framesHold = 5 //how many frames should we go through before changing framesCurrent (actual animation)
+        this.framesHold = 10 //how many frames should we go through before changing framesCurrent (actual animation)
         this.offset = offset
 
     }
@@ -72,7 +72,7 @@ class Fighter extends Sprite {
 
         this.framesCurrent = 0
         this.framesElasped = 0  //how many frames elasped over entire animation
-        this.framesHold = 5 //how many frames should we go through before changing framesCurrent (actual animation)
+        this.framesHold = 10 //how many frames should we go through before changing framesCurrent (actual animation)
 
         this.sprites = sprites
 

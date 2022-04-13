@@ -372,10 +372,21 @@ animate()
 //atempting to limit player to one jump
 playerJumpPress = 0
 
+enemyJumpPress = 0
+
 //moving the player with key press
 window.addEventListener('keydown', (event) => {
 
-    if(!player.dead && playerJumpPress < 1){
+    if(player.position.y === 326)
+    {
+        playerJumpPress = 0
+    }
+    if(enemy.position.y === 326)
+    {
+        enemyJumpPress = 0
+    }
+
+    if(!player.dead){
     switch (event.key) {
         
         //player
@@ -388,10 +399,13 @@ window.addEventListener('keydown', (event) => {
             player.lastKey = 'a'
         break
         case 'w':
-            player.velocity.y = -20
-            console.log('w press')
-            jumpPress++
-            console.log(playerJumpPress)
+            if(playerJumpPress < 1)
+            {
+                player.velocity.y = -20
+                //console.log('w press')
+                playerJumpPress++
+                //console.log(playerJumpPress)
+            }
         break
         case ' ':
             player.attack()
@@ -412,7 +426,13 @@ window.addEventListener('keydown', (event) => {
             enemy.lastKey = 'ArrowLeft'
         break
         case 'ArrowUp':
-            enemy.velocity.y = -20
+            if(enemyJumpPress < 1)
+            {
+                enemy.velocity.y = -20
+                //console.log('w press')
+                enemyJumpPress++
+                //console.log(playerJumpPress)
+            }
         break
         case 'ArrowDown':
             enemy.attack()
@@ -435,9 +455,9 @@ window.addEventListener('keyup', (event) => {
         case 'a':
             keys.a.pressed = false
         break
-        case 'w':
-            jumpPress = 0
-        break
+        /*case 'w':
+            playerJumpPress = 0
+        break*/
 
         //enemy
         case 'ArrowRight':
