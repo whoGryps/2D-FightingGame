@@ -3,6 +3,8 @@ GitHub Game Repo - Matthew Jurek
 
 First ever Fighting Game created - can view the game on the web here: https://whogryps-2d-fightingame.netlify.app/
 
+Working with HTML and JavaScript for the first time.
+
 Followed the tutorial from: https://www.youtube.com/watch?v=vyqbNFMDRGQ&ab_channel=ChrisCourses
 
 Assests:
