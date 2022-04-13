@@ -429,9 +429,9 @@ window.addEventListener('keydown', (event) => {
             if(enemyJumpPress < 1)
             {
                 enemy.velocity.y = -20
-                //console.log('w press')
+                //console.log('Arrow Up press')
                 enemyJumpPress++
-                //console.log(playerJumpPress)
+                //console.log(enemyJumpPress)
             }
         break
         case 'ArrowDown':
