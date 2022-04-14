@@ -20,7 +20,7 @@ Player 1:
 
 A --> Move Left
 
-S --> Move Right
+D --> Move Right
 
 W --> Jump
 
