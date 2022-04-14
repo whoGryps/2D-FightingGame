@@ -377,15 +377,6 @@ enemyJumpPress = 0
 //moving the player with key press
 window.addEventListener('keydown', (event) => {
 
-    if(player.position.y === 326)
-    {
-        playerJumpPress = 0
-    }
-    if(enemy.position.y === 326)
-    {
-        enemyJumpPress = 0
-    }
-
     if(!player.dead){
     switch (event.key) {
         
@@ -399,7 +390,7 @@ window.addEventListener('keydown', (event) => {
             player.lastKey = 'a'
         break
         case 'w':
-            if(playerJumpPress < 1)
+            if(player.position.y === 326)
             {
                 player.velocity.y = -20
                 //console.log('w press')
@@ -426,7 +417,7 @@ window.addEventListener('keydown', (event) => {
             enemy.lastKey = 'ArrowLeft'
         break
         case 'ArrowUp':
-            if(enemyJumpPress < 1)
+            if(enemy.position.y === 326)
             {
                 enemy.velocity.y = -20
                 //console.log('Arrow Up press')
