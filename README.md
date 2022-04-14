@@ -18,12 +18,19 @@ Controls:
 
 Player 1:
 A --> Move Left
+
 S --> Move Right
+
 W --> Jump
+
 Space --> Attack
+
 
 Player 2:
 Left Arrow --> Move Left
+
 Right Arrow --> Move Right
+
 Up Arrow --> Jump
+
 Down Arrow --> Attack
