@@ -108,8 +108,20 @@ class Fighter extends Sprite {
             this.velocity.y = 0
             this.position.y = 326 //sets default height so you don't go under when falling 
          } else this.velocity.y += gravity 
+        
+        //adding barriers to the left and right of the screen
+        if(this.position.x + this.width < 0)
+        {
+            this.position.x = 0
+        } else this.position.x
 
-         //console.log(this.position.y)
+        if(this.position.x - this.width > 1024)
+        {
+            this.position.x = 1024
+        } else this.position.x
+
+
+         //console.log(this.position.x)
 
 
     }

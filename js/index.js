@@ -25,6 +25,7 @@ const shop = new Sprite({
     framesMax: 6
 })
 
+
 /*const playerFace = new Sprite({
     position: {
         x: 0,
@@ -264,11 +265,11 @@ function animate() {
     //player movement
 
     if(keys.a.pressed && player.lastKey === 'a'){
-        player.velocity.x = -5
+        player.velocity.x = -4
         player.switchSprite('runLeft')
   
     } else if (keys.d.pressed && player.lastKey === 'd') {
-        player.velocity.x = 5
+        player.velocity.x = 4
         player.switchSprite('runRight')
 
     } else if(player.lastKey === 'd'){
@@ -293,11 +294,11 @@ function animate() {
 
     //enemy movement
     if(keys.ArrowLeft.pressed && enemy.lastKey === 'ArrowLeft'){
-        enemy.velocity.x = -5
+        enemy.velocity.x = -4
         enemy.switchSprite('runLeft')
 
     } else if (keys.ArrowRight.pressed && enemy.lastKey === 'ArrowRight') {
-        enemy.velocity.x = 5
+        enemy.velocity.x = 4
         enemy.switchSprite('runRight')
 
     } else if(enemy.lastKey === 'ArrowRight'){
