@@ -12,3 +12,18 @@ Assests:
   Background Items: https://brullov.itch.io/oak-woods
   Fighter Character 1: https://luizmelo.itch.io/martial-hero
   Fighter Character 2: https://luizmelo.itch.io/fantasy-warrior
+
+
+Controls:
+
+Player 1:
+A --> Move Left
+S --> Move Right
+W --> Jump
+Space --> Attack
+
+Player 2:
+Left Arrow --> Move Left
+Right Arrow --> Move Right
+Up Arrow --> Jump
+Down Arrow --> Attack
