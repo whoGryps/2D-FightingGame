@@ -17,6 +17,7 @@ Assests:
 Controls:
 
 Player 1:
+
 A --> Move Left
 
 S --> Move Right
@@ -27,6 +28,7 @@ Space --> Attack
 
 
 Player 2:
+
 Left Arrow --> Move Left
 
 Right Arrow --> Move Right
